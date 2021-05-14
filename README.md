@@ -1,6 +1,6 @@
 
 # Miller-Indices-Visualizer
-A GUI based program that aims to visualize lattice planes. 
+## A GUI based program that aims to visualize lattice planes. 
 
 Miller Indices are a symbolic vector representation for the orientation of an atomic plane in a crystal lattice and are defined as the reciprocals of the fractional intercepts which the plane makes with the crystallographic axes.
 
