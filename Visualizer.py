@@ -46,10 +46,10 @@ def reset_instance():
 	plane = turtle.Turtle()
 	wn.reset()
 	wn.update()
-
+	display.config(text ='')
 
 def getvisual():
-	Label(root,bg = "aquamarine",text = f'Miller Indices = ({number1.get()}{number2.get()}{number3.get()})',font = 20).pack()
+	display.config(text = f'Miller Indices = ({number1.get()}{number2.get()}{number3.get()})',font = 20)
 
 
 	global wn
@@ -466,5 +466,7 @@ Button(text = "VIEW",command = getvisual).pack()
 Button(text = "RESET",command = reset_instance).pack()
 
 
+display  = Label(root,bg = "aquamarine",)
+display.pack()
 
 root.mainloop()
