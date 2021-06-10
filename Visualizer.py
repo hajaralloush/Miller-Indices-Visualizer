@@ -44,8 +44,10 @@ def reset_instance():
 	cod = turtle.Turtle()
 	plane = turtle.Turtle()
 	plane = turtle.Turtle()
+	wn.tracer(0,0)
 	wn.reset()
 	wn.update()
+	wn.tracer(1,1)
 	display.config(text ='')
 	display2.config(text= ' ')
 
@@ -60,6 +62,7 @@ def getvisual():
 
 
 	def draw_axes():
+		wn.tracer(0,0)
 		axis1 = turtle.Turtle()
 		axis1.penup()				
 		axis1.goto(10,-40)
@@ -84,6 +87,7 @@ def getvisual():
 		axis3.right(31)
 		axis3.forward(10)
 		axis3.write("Z")
+		wn.tracer(1,1)
 
 
 	draw_axes()
@@ -415,8 +419,9 @@ def getvisual():
 
 
 	draw_cod(int(number1.get()),int(number2.get()),int(number3.get()))
-
+	wn.tracer(0,0)
 	cube(neg_int[0],neg_int[1])
+	wn.tracer(1,1)
 	turtle.done()
 
 
