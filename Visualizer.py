@@ -47,9 +47,11 @@ def reset_instance():
 	wn.reset()
 	wn.update()
 	display.config(text ='')
+	display2.config(text= ' ')
 
 def getvisual():
-	display.config(text = f'Miller Indices = ({number1.get()}{number2.get()}{number3.get()})',font = 20)
+	display2.config(text = f'Intercepts    =  (1/{number1.get()}, 1/{number2.get()}, 1/{number3.get()})',font = 20)
+	display.config(text = f'Miller Indices = ({number1.get()} {number2.get()} {number3.get()})',font = 20)
 
 
 	global wn
@@ -466,7 +468,12 @@ Button(text = "VIEW",command = getvisual).pack()
 Button(text = "RESET",command = reset_instance).pack()
 
 
+display2  = Label(root,bg = "aquamarine",)
+display2.pack()
+
+
 display  = Label(root,bg = "aquamarine",)
 display.pack()
+
 
 root.mainloop()
