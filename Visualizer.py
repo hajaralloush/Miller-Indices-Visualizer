@@ -52,8 +52,15 @@ def reset_instance():
 	display2.config(text= ' ')
 
 def getvisual():
+	l =[number1.get(),number2.get(),number3.get()]
+	for i in range(len(l)):
+		if l[i][0] =="-":
+			l[i] = str(l[i][1:])+'(Bar)'
+			
+	print(l)
+
 	display2.config(text = f'Intercepts    =  (1/{number1.get()}, 1/{number2.get()}, 1/{number3.get()})',font = 20)
-	display.config(text = f'Miller Indices = ({number1.get()} {number2.get()} {number3.get()})',font = 20)
+	display.config(text = f'Miller Indices = ({l[0]} {l[1]} {l[2]})',font = 20)
 
 
 	global wn
