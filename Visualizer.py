@@ -425,7 +425,7 @@ def getvisual():
 
 
 
-	draw_cod(int(number1.get()),int(number2.get()),int(number3.get()))
+	draw_cod(float(number1.get()),float(number2.get()),float(number3.get()))
 	wn.tracer(0,0)
 	cube(neg_int[0],neg_int[1])
 	wn.tracer(1,1)
@@ -465,11 +465,11 @@ number2 = StringVar()
 number3 = StringVar()
 
 
-one = Entry(root, relief = GROOVE, bg = "light grey" ,font = "fixedsys" ,textvariable = number1)
+one = Entry(root, relief = GROOVE, bg = "light grey" ,font = "fixedsys 14" ,textvariable = number1)
 one.pack()
-two = Entry(root, relief = GROOVE, bg = "light grey" ,font = "fixedsys" ,textvariable = number2)
+two = Entry(root, relief = GROOVE, bg = "light grey" ,font = "fixedsys 14" ,textvariable = number2)
 two.pack()
-three = Entry(root, relief = GROOVE, bg = "light grey",font = "fixedsys" ,textvariable = number3)
+three = Entry(root, relief = GROOVE, bg = "light grey",font = "fixedsys 14" ,textvariable = number3)
 three.pack()
 
 
